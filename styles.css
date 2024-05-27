@@ -127,7 +127,11 @@
     .projetos {
     background-color: #191919;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 500px;
+    width: auto;
+    height: 1500px;
+    margin: 10px;
+    
     }
     
     .projetos h2 {
@@ -139,10 +143,13 @@
     .card {
     background-color: #000000;
     height: 365px;
-    width: 335px;
+    
     border-radius: 20px;
     padding: 20px 35px;
     text-align: center;
+    margin: 20px;
+    width: 30%; /* Define a largura de cada card, você pode ajustar o valor conforme necessário */
+    margin-bottom: 20px;
     }
     
     .card img {
@@ -176,8 +183,10 @@
     }
     
     .card-projetos {
+    
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap; /* Para que os cards quebrem para a linha seguinte quando não houver mais espaço na mesma linha */
+    justify-content: space-between;
     margin-top: 100px;
     }
     
